@@ -8,7 +8,6 @@ const filterJWT = async(ctx, next) => {
     catch (e) {
         ctx.status = 400
         ctx.body = { status: "fail" }
-        // ctx.body = { status: "fail" }
     }
 }
 

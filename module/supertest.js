@@ -1,6 +1,5 @@
 const app = require('../src/app')
 const request = require("supertest")
-// const agent = request.agent(app)
 
 let agent;
 class AgentSingleton {

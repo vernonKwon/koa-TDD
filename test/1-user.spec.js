@@ -7,11 +7,11 @@ const AgentSingleton = require('../module/supertest')
 const agent = new AgentSingleton()
 
 describe('로그인 테스트', () => {
-    it('post /auth/signin', (done) => {
+    it('로그인 요청', (done) => {
         agent.post('/auth/signin')
             .send({ id: "idb", pw: "pwb" })
             .end((err, res) => {
-                assert('success', res.body.status)
+                assert.equal('success', res.body.status)
                 done()
             })
     })
@@ -34,3 +34,5 @@ describe('내 정보 조회', () => {
             })
     })
 })
+
+app.close()
