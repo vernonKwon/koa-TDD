@@ -6,9 +6,19 @@
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
     "koa-logger": "^3.2.1",
-    "koa-router": "^10.0.0"
+    "mocha": "^8.2.1",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
