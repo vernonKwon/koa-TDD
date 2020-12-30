@@ -22,7 +22,9 @@ router.get('/myinfo', jwtMiddleware, ctx => {
     const myinfo = db_user_dummy.filter(item => item.userKey === Number(userKey))[0]
     delete myinfo.pw
 
+    // setTimeout(3000)
     ctx.body = myinfo
+
 })
 
 module.exports = router
